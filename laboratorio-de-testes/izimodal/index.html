@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<head>
+	<title>Medilab - iziModal</title>
+
+	<!-- ESTILO -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<!-- jQUERY -->
+	<script type="text/javascript" src="jquery/jquery-2.2.4.min.js"></script>
+
+	<!-- iziMODAL -->
+	<link rel="stylesheet" type="text/css" href="iziModal-master/css/iziModal.css">
+	<script type="text/javascript" src="iziModal-master/js/iziModal.js"></script>
+
+	<!-- FONT-AWESOME -->
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<a href="" class="trigger">Abrir Modal</a>
+
+<div id="modal">
+	bla bla bla
+</div>
+
+<script type="text/javascript">
+$("#modal").iziModal();
+$(document).on('click', '.trigger', function (event) {
+    event.preventDefault();
+    $('#modal').iziModal('open');
+});
+</script>
+	
+
+</body>
+</html>
