@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<head>
+	<title>Medilab - iziToast</title>
+
+	<!-- ESTILO -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<!-- iziTOAST -->
+	<link rel="stylesheet" type="text/css" href="iziToast-master/dist/css/iziToast.css">
+	<script src="iziToast-master/dist/js/iziToast.min.js" type="text/javascript"></script>
+
+	<!-- FONT-AWESOME -->
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<button href="#" class="toastcontato" onclick="meutoast()">Toasting</button>
+
+	<script type="text/javascript">
+	function meutoast(){
+		iziToast.show({
+			class: 'toastcontato',
+			title: 'Menssagem enviada com sucesso.',
+			message: 'Obrigado!',
+			theme: 'dark',
+			color: 'blue',
+			icon: 'fa fa-thumbs-o-up',
+			layout: '2',
+			position: 'bottomCenter',
+			timeout: '5000',
+			progressBarColor: 'white',
+			transitionIn: 'flipInX',
+			transitionOut: 'flipOutX'
+		});
+
+	};
+	</script>
+
+</body>
+</html>
