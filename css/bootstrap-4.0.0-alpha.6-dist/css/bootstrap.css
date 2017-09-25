@@ -5635,18 +5635,21 @@ button.close {
 .carousel {
   position: relative;
   margin-top: 60px;
+  height:500px;
 }
 
 .carousel-inner {
   position: relative;
   width: 100%;
   overflow: hidden;
+  height:500px;
 }
 
 .carousel-item {
   position: relative;
   display: none;
   width: 100%;
+  height:500px;
 }
 
 @media (-webkit-transform-3d) {

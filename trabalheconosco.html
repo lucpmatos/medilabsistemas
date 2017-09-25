@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8" />
-<title>Medilab Sistemas</title>
+  <meta charset="utf-8" />
+  <title>Medilab Sistemas</title>
 
-<link rel="shortcut icon" href="img/m_logo.png">
-<link rel="icon" href="img/m_logo.png">
+  <link rel="shortcut icon" href="img/m_logo.png">
+  <link rel="icon" href="img/m_logo.png">
 
-<!-- ESTILO -->
-<link rel="stylesheet" type="text/css" href="css/estilo.css">
-<link rel="stylesheet" type="text/css" href="css/responsivo.css">
+  <!-- ESTILO -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsivo.css">
 
-<!-- FONT-AWESOME -->
-<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- FONT-AWESOME -->
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
-<!-- LOCAL BOOTSTRAP -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+  <!-- LOCAL BOOTSTRAP -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
 
-<!-- CDN JQUERY 3.1.1 SLIM MIN JS -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <!-- CDN JQUERY 3.1.1 SLIM MIN JS -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
-<!-- CDN THETER MIN JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <!-- CDN THETER MIN JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
-<!-- CDN BOOTSTRAP MIN JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!-- CDN BOOTSTRAP MIN JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-<!-- jQuery -->
-<script type="text/javascript" src="jquery/jquery-2.2.4.min.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="jquery/jquery-2.2.4.min.js"></script>
 
-<!-- iziTOAST -->
+  <!-- iziTOAST -->
   <link rel="stylesheet" type="text/css" href="iziToast-master/dist/css/iziToast.css">
   <script src="iziToast-master/dist/js/iziToast.min.js" type="text/javascript"></script>
 
-<!-- iziMODAL -->
-<link rel="stylesheet" type="text/css" href="iziModal-master/css/iziModal.css">
-<script type="text/javascript" src="iziModal-master/js/iziModal.js"></script>
+  <!-- iziMODAL -->
+  <link rel="stylesheet" type="text/css" href="iziModal-master/css/iziModal.css">
+  <script type="text/javascript" src="iziModal-master/js/iziModal.js"></script>
 
-<!-- RESPONSIVO MOBILE FIRST -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- RESPONSIVO MOBILE FIRST -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- LESS -->
+  <link rel="stylesheet/less" type="text/css" href="css/estilo.less">
+  <script src="less.js-master/dist/less.js" type="text/javascript"></script>
+
+  <!-- scrollTOP -->
+  <script>
+    jQuery(document).ready(function($) {
+      $("#estilototop").click(function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+  </script>
 
 </head>
-<body>
+<body id="scrollhere">
 
   <div id="total-header" class="fixed-top">
     <div id="topo-header">
@@ -61,8 +77,29 @@
                     </button>
             <div class="dropdown-content">
               <h5>Gestão de Imagens</h5>
-              <a href="mediworks.html">PACS MediSystem</a>
-              <a href="#">Telerradiologia</a>
+              <div class="dropdown2">
+                <a href="pacs.html">PACS MediSystem</a>
+                <div class="dropdown-content2">
+                  <a href="mediworks.html">MediWorks</a>
+                  <a href="#">MediCenter</a>
+                  <a href="#">MediWorkList</a>
+                  <a href="#">MediCapture</a>
+                  <a href="#">MediReport</a>
+                  <a href="#">MediView</a>
+                  <a href="#">MediRemote</a>
+                </div><!-- dropdown content 2 -->
+              </div><!-- dropdown2 -->
+              <div class="dropdown3">
+                <a href="#">Telerradiologia</a>
+                <div class="dropdown-content3">
+                  <a href="#">MediWeb</a>
+                  <a href="#">MediviewWeb</a>
+                  <a href="#">MedireportWeb</a>
+                  <a href="#">MediScan</a>
+                  <a href="#">MediCenter</a>
+                  <a href="#">Portal de Resultados</a>
+                </div><!-- dropdown-content3 -->
+              </div><!-- dropdown3 -->
               <h5>Gestão de Clínicas</h5>
               <a href="#">RIS MediClinic</a>
               <a href="#">Documentação</a>
@@ -70,19 +107,32 @@
             <!-- fecha dropdown content -->
           </div>
           <!-- fecha dropdown -->
+
+          <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Soluções</a>
+    <div class="dropdown-menu">
+      <h5 class="dropdown-item">Gestão de Imagens</h5>
+      <a class="dropdown-item" href="pacs.html">PACS MediSystem</a>
+      <a class="dropdown-item" href="#">Telerradiologia</a>
+      <h5 class="dropdown-item">Gestão de Clínicas</h5>
+      <a class="dropdown-item" href="#">RIS MediClinic</a>
+      <a href="#" class="dropdown-item">Documentação</a>
+    </div>
+  </li>
+
+
           <a href="#" data-target="#modalizi" class="nav-item trigger">Contato</a>
           <a href="http://medilab.net.br/" target="new" class="nav-item">Blog</a>
           <a href="trabalheconosco.html" class="nav-item">Trabalhe Conosco</a>
-          <div class="dropdown">
-            <button class="dropbtn" class="nav-item">Idioma <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </button>
-            <div class="dropdown-content">
-              <a href="#"><img src="http://medilab.net.br/wp-content/uploads/2017/02/flags_brasil.png" alt="Português Brasileiro"> Português</a>
-              <a href="#"><img src="http://medilab.net.br/wp-content/uploads/2017/02/flags_espanha.png" alt="Espanhol"> Español</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Idioma</a>
+            <div class="dropdown-menu">
+              <h5 class="dropdown-item">Selecione seu idioma</h5>
+              <a class="dropdown-item" href="#"><img src="http://medilab.net.br/wp-content/uploads/2017/02/flags_brasil.png" alt="Português Brasileiro" width="15"> Português</a>
+              <a class="dropdown-item" href="#"><img src="http://medilab.net.br/wp-content/uploads/2017/02/flags_espanha.png" alt="Espanhol" width="15"> Español</a>
             </div>
-            <!-- fecha dropdown content -->
-          </div>
-          <!-- fecha dropdown -->
+          </li>
+
           <!-- ANTIGO LOCAL DOS SOCIAL-NAV -->
         </div>
         <!-- navbar collapse -->
@@ -419,7 +469,13 @@
     <div class="row">
       <div class="col-md-4">
         <img src="img/Medilab_Branco_4c_B.png" width="200">
-        <br><br><br>
+      </div><!-- col -->
+      <div class="col-md-4"></div><!-- col -->
+      <div class="col-md-4"></div><!-- col -->
+      <hr class="ftr-hr">
+    </div>
+    <div class="row">
+      <div class="col-md-4">
         <div class="ftr-left">
           <h3>Contato</h3>
           <br>
@@ -428,66 +484,57 @@
           <br>
           <h5>E-MAIL:</h5>
           <p>comunicacao@medilabsistemas.com.br</p>
-        </div><!-- ftr left -->
-      </div><!-- col -->
+          <br>
+          <h5>SIGA-NOS</h5>
+          <a target="_blank" href="https://www.facebook.com/MedilabSistemas/?fref=ts"><img class="social-footer-fb" src="img/social_flut-01.png" width="40"></a>
+
+          <a target="_blank" href="https://twitter.com/SistemasMedilab"><img class="social-footer-tw" src="img/social_flut-02.png" width="40"></a>
+
+          <a target="_blank" href="https://www.linkedin.com/in/medilabsistemas?authType=NAME_SEARCH&authToken=dHRX&locale=pt_BR&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A504289770%2CauthType%3ANAME_SEARCH%2Cidx%3A2-6-7%2CtarId%3A1478877039466%2Ctas%3Amedilab"><img class="social-footer-li" src="img/social_flut-03.png" width="40"></a>
+
+          <a target="_blank" href="https://www.youtube.com/channel/UCOp5wBk9ku_r7XZ32OAajVA"><img class="social-footer-yt" src="img/social_flut-04.png" width="40"></a>
+        </div>
+        <!-- ftr left -->
+      </div>
+      <!-- col -->
       <div class="col-md-4">
-      <div class="ftr-center">
-      <h5>SIGA-NOS</h5>
-        <a target="_blank" href="https://www.facebook.com/MedilabSistemas/?fref=ts"><img class="social-footer-fb" src="img/social_flut-01.png" width="40" style="margin-right:15px;"></a>
-
-        <a target="_blank" href="https://twitter.com/SistemasMedilab"><img class="social-footer-tw" src="img/social_flut-02.png" width="40" style="margin-right:15px;"></a>
-
-        <a target="_blank" href="https://www.linkedin.com/in/medilabsistemas?authType=NAME_SEARCH&authToken=dHRX&locale=pt_BR&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A504289770%2CauthType%3ANAME_SEARCH%2Cidx%3A2-6-7%2CtarId%3A1478877039466%2Ctas%3Amedilab"><img class="social-footer-li" src="img/social_flut-03.png" width="40" style="margin-right:15px;"></a>
-
-        <a target="_blank" href="https://www.youtube.com/channel/UCOp5wBk9ku_r7XZ32OAajVA"><img class="social-footer-yt" src="img/social_flut-04.png" width="40"></a>
-        </div><!-- ftr center -->
-      </div><!-- col -->
-      <div class="col-md-4">
-        <div class="ftr-right">
-          <h5>BLOG DA MEDILAB</h5>
+        <div class="ftr-center">
+          <h3>Blog da Medilab</h3>
+          <br>
+          <h5>DESTAQUES</h5>
           <a href="http://medilab.net.br/" target="_blank"><i class="fa fa-chevron-right"></i> Posts</a><br>
           <a href="http://medilab.net.br/ebooks/" target="_blank"><i class="fa fa-chevron-right"></i> E-Books</a><br>
           <a href="http://medilab.net.br/videos/" target="_blank"><i class="fa fa-chevron-right"></i> Vídeos</a><br>
-          <hr style="width:100%;">
+          <br>
           <h5>CATEGORIAS</h5>
           <a href="http://medilab.net.br/category/gestao/" target="_blank"><i class="fa fa-chevron-right"></i> Gestão</a><br>
           <a href="http://medilab.net.br/category/atendimento-ao-paciente/" target="_blank"><i class="fa fa-chevron-right"></i> Atendimento ao Paciente</a><br>
           <a href="http://medilab.net.br/category/medicina-diagnostica/" target="_blank"><i class="fa fa-chevron-right"></i> Medicina Diagnóstica</a><br>
           <a href="http://medilab.net.br/category/medilab-em-destaque/" target="_blank"><i class="fa fa-chevron-right"></i> Medilab em Destaque</a><br>
           <a href="http://medilab.net.br/category/tecnologia/" target="_blank"><i class="fa fa-chevron-right"></i> Tecnologia</a>
-        </div><!-- ftr right -->
-      </div><!-- col -->
-    </div><!-- row -->
-  </div><!-- cotainer -->
+        </div>
+        <!-- ftr center -->
+      </div>
+      <!-- col -->
+      <div class="col-md-4">
+        <div class="ftr-right">
+          <h3>Mapa do Site</h3>
+          <br>
+          Inserir mapa do site quando o mesmo estiver pronto.
+        </div>
+        <!-- ftr right -->
+      </div>
+      <!-- col -->
+    </div>
+    <!-- row -->
+  </div>
+  <!-- cotainer -->
 </footer>
 
 <div class="rodape2">
   <p>Medilab Sistemas &copy; - Todos os direitos reservados</p>
 </div><!-- rodape2 -->
 
-
-<!-- =====BTN FIXED SOCIAL FLUT===== -->
-<div id="social-flut" style="width:auto;height:auto;position:fixed;top:130px;left:0;z-index:900;">
-
-           <a href="https://www.facebook.com/MedilabSistemas/?fref=ts" target="new"><div id="fb-flut">
-               <img src="img/social_flut-01.png" alt="" width="30" height="30">
-           </div></a>
-
-           <a href="https://twitter.com/SistemasMedilab" target="new"><div id="tw-flut">
-               <img src="img/social_flut-02.png" alt="" width="30" height="30">
-           </div></a>
-
-           <a href="https://www.linkedin.com/in/medilabsistemas?authType=NAME_SEARCH&authToken=dHRX&locale=pt_BR&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A504289770%2CauthType%3ANAME_SEARCH%2Cidx%3A2-6-7%2CtarId%3A1478877039466%2Ctas%3Amedilab" target="new"><div id="li-flut">
-               <img src="img/social_flut-03.png" alt="" width="30" height="30">
-           </div></a>
-
-           <a href="https://www.youtube.com/channel/UCOp5wBk9ku_r7XZ32OAajVA" target="new"><div id="yt-flut">
-               <img src="img/social_flut-04.png" alt="" width="30" height="30">
-           </div></a>
-
-
-       </div><!-- social flut -->
-<!-- =====FECHA BTN FIXED SOCIAL FLUT===== -->
 
 <!-- ========SOCIAL BOTTOM======== -->
 <div class="social-bottom">
@@ -507,36 +554,35 @@
 <!-- social bottom -->
 
 <!-- ============SCROLL TO TOP============ -->
-<button onclick="topFunction()" id="estilototop" title="Voltar ao topo"><i class="fa fa-chevron-up fa-2x"></i></button>
+<a id="estilototop" title="Voltar ao topo" href="#scrollhere"><i class="fa fa-chevron-up fa-2x"></i></a>
 
 <!-- HEADER FLEX -->
 <script type="text/javascript">
-        //ABRE FUNÇÃO NAV
-        document.onscroll = function navFunc() {
-            var nav = document.getElementById('navtop');
-            if (window.pageYOffset > 1) {
-                nav.classList.add("navtop-scrolled");
-            } else {
-                nav.classList.remove("navtop-scrolled");
-            }
+  //ABRE FUNÇÃO NAV
+  document.onscroll = function navFunc() {
+    var nav = document.getElementById('navtop');
+    if (window.pageYOffset > 1) {
+      nav.classList.add("navtop-scrolled");
+    } else {
+      nav.classList.remove("navtop-scrolled");
+    }
 
-            var nav = document.getElementById('navbottom');
-            if (window.pageYOffset > 1) {
-                nav.classList.add("navbottom-scrolled");
-            } else {
-                nav.classList.remove("navbottom-scrolled");
-            }
+    var nav = document.getElementById('navbottom');
+    if (window.pageYOffset > 1) {
+      nav.classList.add("navbottom-scrolled");
+    } else {
+      nav.classList.remove("navbottom-scrolled");
+    }
 
-            var div = document.getElementById('mlogo');
-            if (window.pageYOffset > 1) {
-                div.classList.add("mlogo-scrolled");
-            } else {
-                div.classList.remove("mlogo-scrolled");
-            }
+    var div = document.getElementById('mlogo');
+    if (window.pageYOffset > 1) {
+      div.classList.add("mlogo-scrolled");
+    } else {
+      div.classList.remove("mlogo-scrolled");
+    }
 
-        } //FECHA FUNÇÃO NAV
-
-    </script>
+  } //FECHA FUNÇÃO NAV
+</script>
 
     <!-- FORMULARIO CONTATO -->
     <script>
@@ -612,7 +658,7 @@
 
         <!-- IZI TOAST -->
         <script type="text/javascript">
-          function meutoast(){
+          function meutoast() {
             iziToast.show({
               class: 'toastcontato',
               title: 'Menssagem enviada com sucesso.',
@@ -633,78 +679,81 @@
 
 <!-- IZI MODAL -->
 <script type="text/javascript">
-$("#modalizi").iziModal({
-  title: 'Entre em contato conosco',
-  subtitle: 'Saiba mais sobre a Medilab e nossos produtos: PACS, RIS, Telerradiologia, documentação. Entre em contato com a equipe Medilab Sistemas.',
-  headerColor: 'rgb(0,112,187)',
-  icon: 'fa fa-envelope-o',
-  theme: '',
-  width: '1000px',
-  zindex: '9999',
-  radius: '0',
-  /*fullscreen: true,*/
-  transitionIn: 'fadeInUp',
-  transitionOut: 'fadeOutUp'
-});
+  $("#modalizi").iziModal({
+    title: 'Entre em contato conosco',
+    subtitle: 'Saiba mais sobre a Medilab e nossos produtos: PACS, RIS, Telerradiologia, documentação. Entre em contato com a equipe Medilab Sistemas.',
+    headerColor: 'rgb(0,112,187)',
+    icon: 'fa fa-envelope-o',
+    theme: '',
+    width: '1000px',
+    zindex: '9999',
+    radius: '0',
+    fullscreen: true,
+    transitionIn: 'comingIn',
+    transitionOut: 'comingOut',
+    overlayColor: 'rgba(0,0,0,0.7)'
+  });
 
-$(document).on('click', '.trigger', function (event) {
+  $(document).on('click', '.trigger', function(event) {
     event.preventDefault();
     $('#modalizi').iziModal('open');
-});
+  });
 </script>
 
 <script type="text/javascript">
-    jQuery.fn.extend({
-        placeHolder: function () {
-            return this.each(function () {
-                var $this = $(this);
+  jQuery.fn.extend({
+    placeHolder: function() {
+      return this.each(function() {
+        var $this = $(this);
 
-                var labelText = $(this).attr("place-holder");
+        var labelText = $(this).attr("place-holder");
 
-                var label = $("<label>", {
-                    html: labelText,
-                    'class': 'label-place-holder'
-                });
+        var label = $("<label>", {
+          html: labelText,
+          'class': 'label-place-holder'
+        });
 
-                label.prependTo(this);
+        label.prependTo(this);
 
-                $(this).addClass('place-holder-input');
+        $(this).addClass('place-holder-input');
 
-                $(this).find('input').focus(function () {
-                    $this.addClass('focus');
-                    $this.addClass('color-focus');
-                }).focusout(function () {
-                    if ($(this).val() == '') {
-                        $this.removeClass('focus');
-                    }
-                    $this.removeClass('color-focus');
-                }).val('');
+        $(this).find('input').focus(function() {
+          $this.addClass('focus');
+          $this.addClass('color-focus');
+        }).focusout(function() {
+          if ($(this).val() == '') {
+            $this.removeClass('focus');
+          }
+          $this.removeClass('color-focus');
+        }).val('');
 
-            });
-        }
-    });
-    $(".coolPlaceHolder").placeHolder();
+      });
+    }
+  });
+  $(".coolPlaceHolder").placeHolder();
 </script>
 
 <!-- =========SCROLL TO TOP========= -->
 <script type="text/javascript">
-    window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {
+    scrollFunction()
+  };
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("estilototop").style.display = "block";
-            $('#estilototop').addClass("subirbtn");
-        } else {
-            document.getElementById("estilototop").style.display = "none";
-            $('#estilototop').removeClass("subirbtn");
-        }
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("estilototop").style.display = "block";
+      $('#estilototop').addClass("subirbtn");
+    } else {
+      document.getElementById("estilototop").style.display = "none";
+      $('#estilototop').removeClass("subirbtn");
     }
+  }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0; // For Chrome, Safari and Opera
-        document.documentElement.scrollTop = 0; // For IE and Firefox
-    }
+  // quando o usuario clicar no botao, scroll para o topo do documento
+  //function topFunction() {
+  //document.body.scrollTop = 0; // Chrome, Safari and Opera
+  //document.documentElement.scrollTop = 0; // IE and Firefox
+  //}
 </script>
 
 </body>
