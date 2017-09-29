@@ -469,6 +469,20 @@ body {
   height:auto;
   padding:0px 5px 0px 5px;
 }
+.icon-group-ris {
+  width:100%;
+  height: auto;
+  margin: auto;
+  margin-top:10px;
+}
+.icon-group-ris img {
+  width:18.5%;
+  height:auto;
+  padding:0px 5px 0px 5px;
+}
+.icon-group-ris li:first-child{
+  margin-left:30%;
+}
 
 .mediworks-sct {}
 
