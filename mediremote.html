@@ -73,17 +73,55 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <a href="index.html"><img id="mlogo" class="mlogo" src="img/medilab_logo.png" alt="Medilab Sistemas"></a>
           <a href="index.html" class="nav-item">Início</a>
+          <div class="dropdown">
+            <button class="dropbtn nav-item">Soluções <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+            <div class="dropdown-content">
+              <h5>Gestão de Imagens</h5>
+              <div class="dropdown2">
+                <a href="pacs.html">PACS MediSystem</a>
+                <div class="dropdown-content2">
+                  <a href="mediworks.html">MediWorks</a>
+                  <a href="#">MediCenter</a>
+                  <a href="#">MediWorkList</a>
+                  <a href="#">MediCapture</a>
+                  <a href="#">MediReport</a>
+                  <a href="#">MediView</a>
+                  <a href="#">MediRemote</a>
+                </div><!-- dropdown content 2 -->
+              </div><!-- dropdown2 -->
+              <div class="dropdown3">
+                <a href="#">Telerradiologia</a>
+                <div class="dropdown-content3">
+                  <a href="#">MediWeb</a>
+                  <a href="#">MediviewWeb</a>
+                  <a href="#">MedireportWeb</a>
+                  <a href="#">MediScan</a>
+                  <a href="#">MediCenter</a>
+                  <a href="#">Portal de Resultados</a>
+                </div><!-- dropdown-content3 -->
+              </div><!-- dropdown3 -->
+              <h5>Gestão de Clínicas</h5>
+              <a href="#">RIS MediClinic</a>
+              <a href="#">Documentação</a>
+            </div>
+            <!-- fecha dropdown content -->
+          </div>
+          <!-- fecha dropdown -->
+
           <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Soluções</a>
-          <div class="dropdown-menu">
-            <h5 class="dropdown-item">Gestão de Imagens</h5>
-            <a class="dropdown-item" href="pacs.html">PACS MediSystem</a>
-            <a class="dropdown-item" href="telerradiologia.html">Telerradiologia</a>
-            <h5 class="dropdown-item">Gestão de Clínicas</h5>
-            <a class="dropdown-item" href="ris.html">RIS MediClinic</a>
-            <a class="dropdown-item" href="documentacao.html">Documentação</a>
-          </div><!-- dropdown menu -->
-        </li><!-- dropdown -->
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Soluções</a>
+    <div class="dropdown-menu">
+      <h5 class="dropdown-item">Gestão de Imagens</h5>
+      <a class="dropdown-item" href="pacs.html">PACS MediSystem</a>
+      <a class="dropdown-item" href="#">Telerradiologia</a>
+      <h5 class="dropdown-item">Gestão de Clínicas</h5>
+      <a class="dropdown-item" href="#">RIS MediClinic</a>
+      <a href="#" class="dropdown-item">Documentação</a>
+    </div>
+  </li>
+
+
           <a href="#" data-target="#modalizi" class="nav-item trigger">Contato</a>
           <a href="http://medilab.net.br/" target="new" class="nav-item">Blog</a>
           <a href="trabalheconosco.html" class="nav-item">Trabalhe Conosco</a>
@@ -95,6 +133,7 @@
               <a class="dropdown-item" href="#"><img src="http://medilab.net.br/wp-content/uploads/2017/02/flags_espanha.png" alt="Espanhol" width="15"> Español</a>
             </div>
           </li>
+
           <!-- ANTIGO LOCAL DOS SOCIAL-NAV -->
         </div>
         <!-- navbar collapse -->
@@ -111,9 +150,12 @@
         </ul>
     </div><!-- social nav -->
   </div><!-- navbar collapse -->
-</nav><!-- fecha nav bottom -->
-</div><!-- fecha topo -->
-</div><!-- fecha total -->
+      </nav>
+      <!-- fecha nav bottom -->
+    </div>
+    <!-- fecha topo -->
+  </div>
+  <!-- fecha total -->
 
   <!-- Modal do header -->
   <div id="modalizi">
@@ -246,231 +288,37 @@
   </div>
   <!-- modalizi -->
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <img class="d-block img-fluid img-banner" src="img/slides/banner1.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
-          <a href="" class="banner-link"><h3>Titulo do Slide 1</h3></a>
-          <a href="" class="banner-link">
-            <p>Lorem ipsum dolor sit amet ipsum dolor sit amet</p>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block img-fluid img-banner" src="img/slides/banner2.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
-          <a href="" class="banner-link"><h3>Titulo do Slide 2</h3></a>
-          <a href="" class="banner-link">
-            <p>Lorem ipsum dolor sit amet ipsum dolor sit amet</p>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block img-fluid img-banner" src="img/slides/banner1.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
-          <a href="" class="banner-link"><h3>Titulo do Slide 3</h3></a>
-          <a href="" class="banner-link">
-            <p>Lorem ipsum dolor sit amet ipsum dolor sit amet</p>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block img-fluid img-banner" src="img/slides/banner2.jpg" alt="Third slide">
-        <div class="carousel-caption d-none d-md-block">
-          <a href="" class="banner-link"><h3>Titulo do Slide 4</h3></a>
-          <a href="" class="banner-link">
-            <p>Lorem ipsum dolor sit amet ipsum dolor sit amet</p>
-          </a>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-  </div>
-  <!-- carousel -->
-
-  <div class="solucoes">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Soluções</h1>
-        </div><!-- col -->
-      </div><!-- row -->
-      <hr>
-      <div class="row">
-        <div class="col-md-12">
-          <p class="subtitle">Conheça as principais soluções da Medilab Sistemas</p>
-        </div><!-- col -->
-      </div><!-- row -->
-      <div class="row">
-        <div class="col-md-3">
-          <div class="box-solucao">
-            <div class="box-inner-top">
-              <img src="img/icone_solucao_pacs.png" alt="PACS">
-            </div><!-- top -->
-            <div class="box-inner-middle">
-              <h2>PACS</h2>
-              <br>
-              <p>O PACS MediSystem está presente nos principais centros de diagnóstico do Brasil e América Latina. Reúne softwares de alto desempenho em tecnologia para gestão de imagens, gerando mais produtividade e fluxo de trabalho otimizado.</p>
-            </div><!-- middle -->
-            <div class="box-inner-bottom">
-              <a href="pacs.html" class="btn btn-outline-primary">Saiba mais</a>
-            </div><!-- bottom -->
-          </div><!-- solucao -->
-        </div><!-- col -->
-        <div class="col-md-3">
-          <div class="box-solucao">
-            <div class="box-inner-top">
-              <img src="img/icone_solucao_telerradiologia.png" alt="Telerradiologia">
-            </div><!-- top -->
-            <div class="box-inner-middle">
-              <h2>Telerradiologia</h2>
-              <br>
-              <p>A Telerradiologia é essencial para garantir produtividade e aumentar o acesso a cuidados com a saúde. Pensando nisso, desenvolvemos diversas ferramentas para oferecer todo suporte na transmissão de imagens, análises e emissão de laudos.</p>
-            </div><!-- middle -->
-            <div class="box-inner-bottom">
-              <a href="telerradiologia.html" class="btn btn-outline-primary">Saiba mais</a>
-            </div><!-- bottom -->
-          </div><!-- solucao -->
-        </div><!-- col -->
-        <div class="col-md-3">
-          <div class="box-solucao">
-            <div class="box-inner-top">
-              <img src="img/icone_solucao_ris.png" alt="RIS">
-            </div><!-- top -->
-            <div class="box-inner-middle">
-              <h2>RIS</h2>
-              <br>
-              <p>Uma solução completa para gerenciamento de clínicas e centros de diagnóstico por imagem. Com interfaces modernas e intuitivas, contém recursos para administração de todas as etapas de atendimento, gestão de processos e segurança das operações.</p>
-            </div><!-- middle -->
-            <div class="box-inner-bottom">
-              <a href="ris.html" class="btn btn-outline-primary">Saiba mais</a>
-            </div><!-- bottom -->
-          </div><!-- solucao -->
-        </div><!-- col -->
-        <div class="col-md-3">
-          <div class="box-solucao">
-            <div class="box-inner-top">
-              <img src="img/icone_solucao_documentacao.png" alt="Documentação">
-            </div><!-- top -->
-            <div class="box-inner-middle">
-              <h2>Documentação</h2>
-              <br>
-              <p>Há cenários em que, mesmo com a disponibilização online de resultados de exames, existe a necessidade da entrega física desta documentação. Com processos integrados, o recurso de impressão sob demanda gerencia as imagens e disponibiliza os laudos prontos.</p>
-            </div><!-- middle -->
-            <div class="box-inner-bottom">
-              <a href="documentacao.html" class="btn btn-outline-primary">Saiba mais</a>
-            </div><!-- bottom -->
-          </div><!-- solucao -->
-        </div><!-- col -->
-      </div><!-- row -->
-    </div><!-- container -->
-  </div><!-- solucoes -->
-
-
-  <!-- ========================SOBRE======================== -->
-  <div class="sobre">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="conhecendomedilab">Conhecendo a Medilab Sistemas</h1>
-        </div>
-        <!-- col -->
-      </div>
-      <!-- row -->
-      <hr>
-      <div class="row">
-        <div class="col-md-12">
-          <p class="subtitle">"É assim que a gente cresce: juntos, antecipando soluções em medicina."</p><br>
-        </div>
-        <!-- col -->
-      </div>
-      <!-- row -->
-      <div class="row img-sobre">
-        <div class="col-md-4"></div>
-        <!-- col -->
-        <div class="col-md-4">
-          <img src="img/medilab_logo.png" alt="Medilab Sistemas" width="100%">
-        </div>
-        <!-- col -->
-        <div class="col-md-4"></div>
-        <!-- col -->
-      </div>
-      <!-- row -->
-      <div class="row">
-        <div class="col-md-2 texto-sobre"></div>
-        <div class="col-md-8 texto-sobre">
-          <p>Presente nos principais centros de diagnóstico, clínicas e hospitais do Brasil e da América Latina, a Medilab Sistemas reúne uma equipe multidisciplinar especializada no desenvolvimento de softwares de alto desempenho em tecnologia para o gerenciamento
-            de imagens e processos: PACS, RIS, Telerradiologia e Documentação.</p>
-            <p>Há mais de 20 anos no mercado, sempre nos preocupamos em acompanhar o dia a dia e a evolução das demandas do setor de HealthCare. Por meio de uma rede colaborativa, composta por clientes e parceiros, temos acesso direto aos anseios e dificuldades
-              tanto da classe médica quanto dos administradores de clínicas e hospitais, de todos os portes.</p>
-              <p>Ao direcionar esforços para inovação em tecnologia digital, visamos impactar de forma positiva a qualidade de vida, através de atendimentos mais rápidos, potencialização da gestão e alta qualidade diagnóstica.</p>
-        </div>
-        <div class="col-md-2 texto-sobre"></div>
-      </div><!-- row -->
-
-    </div>
-    <!-- container -->
-  </div>
-  <!-- sobre -->
-
-  <div class="sobre-mw">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Conheça o MediWorks 10</h1>
-        </div>
-        <!-- col -->
-      </div>
-      <!-- row -->
-      <hr>
-      <div class="row">
-        <div class="col-md-12">
-          <p class="subtitle">Alta performance no ato médico.</p>
-        </div>
-        <!-- col -->
-      </div>
-      <!-- row -->
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <img src="img/mediworks10_logo.png" class="img-mediworks" alt="PACS MediWorks 10" width="100%">
-        </div>
-        <!-- col -->
-        <div class="col-md-8 texto-sobre">
-          <p class="p-big">Uma plataforma multimodalidade, que inclui as principais ferramentas de diagnóstico para que você obtenha imagens com excelente qualidade.</p>
-          <a href="mediworks.html" class="btn btn-outline-primary btn-lg col-md-4">Leia mais</a>
-        </div>
-        <!-- col -->
-      </div>
-      <!-- row -->
-    </div>
-    <!-- container -->
-  </div>
-  <!-- sobre mw -->
+  <div class="bg-topo"></div>
+  <!-- bg topo -->
 
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <a href="#" class="btn btn-outline-primary col-md-4" onclick="meutoast()">iziToast</a>
+        <h1>MediRemote</h1>
+      </div><!--col-->
+    </div><!--row-->
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/logos_pacs_mediremote.png" alt="MediView" width="70%">
+
       </div>
-      <!-- col -->
-    </div>
-    <!-- row -->
-  </div>
-  <!-- container -->
+      <div class="col-md-6">
+        <p>O <strong>MediRemote</strong> realiza a comunicação DICOM e a transferência de imagens entre as unidades de um mesmo centro de diagnóstico, possibilitando a criação de uma central de laudos ou a segunda opinião de um radiologista de outra cidade.</p>
+        <p>Idealizado para soluções de laudo centralizado, otimiza a banda disponível para o tráfego de imagens, controlando o fluxo de exames entre as unidades e a central. Também oferece ao administrador uma visão abrangente do fluxo de trabalho em um ambiente multicêntrico, permitindo o gerenciamento globalizado de exames e o controle via relatórios centralizados - laudos emitidos, pendentes, reconvocações, etc.</p>
+        <p>O <strong>MediRemote</strong> é um programa servidor que não precisa de interação com o usuário. Com ele, é possível transferir arquivos de forma confiável para outra instância do software num local remoto via rede. Este sistema pode enviar arquivos de imagens, laudos ditados, laudos escritos e comentários.</p>
+        <p>Os pedidos de envio são feitos pelos sistemas MediWorks, MediCenter ou MediReport.</p>
+      </div><!-- col -->
+    </div><!-- row -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-path">
+          <hr width="100%">
+          <p><i class="fa fa-sitemap"></i> <a href="index.html">Início</a> <i class="fa fa-angle-right"></i> <a href="pacs.html">PACS MediSystem</a> <i class="fa fa-angle-right"></i> MediCenter</p>
+        </div><!-- page path -->
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!--container-->
 
   <footer class="rodape1">
     <div class="container">
@@ -544,37 +392,6 @@
   </div>
   <!-- rodape2 -->
 
-
-  <!-- =====BTN FIXED SOCIAL FLUT===== -->
-  <!--<div id="social-flut">
-
-    <a href="https://www.facebook.com/MedilabSistemas/?fref=ts" target="new">
-      <div id="fb-flut">
-        <img src="img/social_flut-01.png" alt="" width="30" height="30">
-      </div>
-    </a>
-
-    <a href="https://twitter.com/SistemasMedilab" target="new">
-      <div id="tw-flut">
-        <img src="img/social_flut-02.png" alt="" width="30" height="30">
-      </div>
-    </a>
-
-    <a href="https://www.linkedin.com/in/medilabsistemas?authType=NAME_SEARCH&authToken=dHRX&locale=pt_BR&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A504289770%2CauthType%3ANAME_SEARCH%2Cidx%3A2-6-7%2CtarId%3A1478877039466%2Ctas%3Amedilab"
-      target="new">
-      <div id="li-flut">
-        <img src="img/social_flut-03.png" alt="" width="30" height="30">
-      </div>
-    </a>
-
-    <a href="https://www.youtube.com/channel/UCOp5wBk9ku_r7XZ32OAajVA" target="new">
-      <div id="yt-flut">
-        <img src="img/social_flut-04.png" alt="" width="30" height="30">
-      </div>
-    </a>
-  </div>-->
-  <!-- social flut -->
-
   <!-- ========SOCIAL BOTTOM======== -->
   <div class="social-bottom">
     <div class="social-bottom-fb">
@@ -591,6 +408,8 @@
     </div><!-- yt -->
   </div>
   <!-- social bottom -->
+
+  <!-- =====FECHA BTN FIXED SOCIAL FLUT===== -->
 
   <!-- ============SCROLL TO TOP============ -->
   <a id="estilototop" title="Voltar ao topo" href="#scrollhere"><i class="fa fa-chevron-up fa-2x"></i></a>
