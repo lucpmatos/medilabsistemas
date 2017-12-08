@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <a href="#" id="btn" class="btn btn-outline-primary col-md-4" onclick="myFunction()">Visualizar Manual</a>
+
+  <script>
+  //$( "#btn" ).click(function() {
+  //window.open("mediworks-9.pdf", "", "menubar=no");
+//});
+//window.open("mediworks-9.pdf");
+
+function myFunction() {
+    var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+    myWindow.document.write("<a href='manuais/mediworks-9.pdf'>Abrir pdf manolooo</a>");
+}
+  </script>
+
+</body>
+</html>
