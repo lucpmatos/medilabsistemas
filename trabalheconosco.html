@@ -42,7 +42,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- LESS -->
-  <link rel="stylesheet/less" type="text/css" href="css/estilo.less">
+  <link rel="stylesheet/less" type="text/css" href="css/mixins.less">
   <script src="less.js-master/dist/less.js" type="text/javascript"></script>
 
   <!-- scrollTOP -->
@@ -72,55 +72,17 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <a href="index.html"><img id="mlogo" class="mlogo" src="img/medilab_logo.png" alt="Medilab Sistemas"></a>
           <a href="index.html" class="nav-item">Início</a>
-          <div class="dropdown">
-            <button class="dropbtn nav-item">Soluções <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </button>
-            <div class="dropdown-content">
-              <h5>Gestão de Imagens</h5>
-              <div class="dropdown2">
-                <a href="pacs.html">PACS MediSystem</a>
-                <div class="dropdown-content2">
-                  <a href="mediworks.html">MediWorks</a>
-                  <a href="#">MediCenter</a>
-                  <a href="#">MediWorkList</a>
-                  <a href="#">MediCapture</a>
-                  <a href="#">MediReport</a>
-                  <a href="#">MediView</a>
-                  <a href="#">MediRemote</a>
-                </div><!-- dropdown content 2 -->
-              </div><!-- dropdown2 -->
-              <div class="dropdown3">
-                <a href="#">Telerradiologia</a>
-                <div class="dropdown-content3">
-                  <a href="#">MediWeb</a>
-                  <a href="#">MediviewWeb</a>
-                  <a href="#">MedireportWeb</a>
-                  <a href="#">MediScan</a>
-                  <a href="#">MediCenter</a>
-                  <a href="#">Portal de Resultados</a>
-                </div><!-- dropdown-content3 -->
-              </div><!-- dropdown3 -->
-              <h5>Gestão de Clínicas</h5>
-              <a href="#">RIS MediClinic</a>
-              <a href="#">Documentação</a>
-            </div>
-            <!-- fecha dropdown content -->
-          </div>
-          <!-- fecha dropdown -->
-
           <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Soluções</a>
-    <div class="dropdown-menu">
-      <h5 class="dropdown-item">Gestão de Imagens</h5>
-      <a class="dropdown-item" href="pacs.html">PACS MediSystem</a>
-      <a class="dropdown-item" href="#">Telerradiologia</a>
-      <h5 class="dropdown-item">Gestão de Clínicas</h5>
-      <a class="dropdown-item" href="#">RIS MediClinic</a>
-      <a href="#" class="dropdown-item">Documentação</a>
-    </div>
-  </li>
-
-
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Soluções</a>
+          <div class="dropdown-menu">
+            <h5 class="dropdown-item">Gestão de Imagens</h5>
+            <a class="dropdown-item" href="pacs.html">PACS MediSystem</a>
+            <a class="dropdown-item" href="telerradiologia.html">Telerradiologia</a>
+            <h5 class="dropdown-item">Gestão de Clínicas</h5>
+            <a class="dropdown-item" href="ris.html">RIS MediClinic</a>
+            <a class="dropdown-item" href="documentacao.html">Documentação</a>
+          </div><!-- dropdown menu -->
+        </li><!-- dropdown -->
           <a href="#" data-target="#modalizi" class="nav-item trigger">Contato</a>
           <a href="http://medilab.net.br/" target="new" class="nav-item">Blog</a>
           <a href="trabalheconosco.html" class="nav-item">Trabalhe Conosco</a>
@@ -132,7 +94,6 @@
               <a class="dropdown-item" href="#"><img src="http://medilab.net.br/wp-content/uploads/2017/02/flags_espanha.png" alt="Espanhol" width="15"> Español</a>
             </div>
           </li>
-
           <!-- ANTIGO LOCAL DOS SOCIAL-NAV -->
         </div>
         <!-- navbar collapse -->
@@ -149,54 +110,61 @@
         </ul>
     </div><!-- social nav -->
   </div><!-- navbar collapse -->
-      </nav>
-      <!-- fecha nav bottom -->
-    </div>
-    <!-- fecha topo -->
-  </div>
-  <!-- fecha total -->
+</nav><!-- fecha nav bottom -->
+</div><!-- fecha topo -->
+</div><!-- fecha total -->
 
-    <!-- Modal do header -->
-<div id="modalizi">
-  <form id="formularioContato" method="POST">
-            <div class="form-group">
-            <div class="container" style="width:100%;">
-              <div class="row">
-              <div class="col-md-12">
-                <!--<label for="nome">Nome:</label>-->
-                <input type="nome" class="form-control ggform" name="nome" id="nome" placeholder="Seu nome" maxlength="20" required>
-              </div><!-- col -->
-              </div><!-- row -->
-              <div class="row" style="margin-top:8px;">
-                <div class="col-md-12">
-                  <!--<label for="sobrenome">Sobrenome:</label>-->
-                  <input type="sobrenome" class="form-control ggform" name="sobrenome" id="sobrenome" placeholder="Seu sobrenome" maxlength="20" required>
-                </div><!-- col -->
-              </div><!-- row -->
-              <div class="row" style="margin-top:8px;">
-                <div class="col-md-6">
-                <!--<label for="email">E-mail:</label>-->
-                <input type="email" class="form-control ggform" name="email" id="email" placeholder="E-mail" maxlength="40" required>
-                </div><!-- col -->
-                <div class="col-md-6">
-                  <!--<label for="telefone">Telefone:</label>-->
-                <input type="telefone" class="form-control ggform" name="telefone" id="telefone" placeholder="Telefone" maxlength="20" required>
-                </div><!-- col -->
-              </div><!-- row -->
-              <div class="row" style="margin-top:8px;">
-                <div class="col-md-6">
-                  <!--<label for="empresa">Empresa:</label>-->
-                  <input type="empresa" class="form-control ggform" name="empresa" id="empresa" placeholder="Empresa">
-                </div><!-- col -->
-                <div class="col-md-6">
-                  <!--<label for="cargo">Cargo:</label>-->
-                  <input type="cargo" class="form-control ggform" name="cargo" id="cargo" placeholder="Cargo">
-                </div><!-- col -->
-              </div><!-- row -->
-              <div class="row" style="margin-top:8px;">
-                <div class="col-md-6">
-                  <!--<label for="estadoSelect1">Estado</label>-->
-                    <select style="opacity:0.7;" class="form-control ggform" name="estado" id="estado">
+  <!-- Modal do header -->
+  <div id="modalizi">
+    <form id="formularioContato" method="POST">
+      <div class="form-group">
+        <div class="container container-contato">
+          <div class="row row-form">
+            <div class="col-md-12">
+              <!--<label for="nome">Nome:</label>-->
+              <input type="nome" class="form-control ggform" name="nome" id="nome" placeholder="Seu nome" maxlength="20" required>
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+          <div class="row row-form">
+            <div class="col-md-12">
+              <!--<label for="sobrenome">Sobrenome:</label>-->
+              <input type="sobrenome" class="form-control ggform" name="sobrenome" id="sobrenome" placeholder="Seu sobrenome" maxlength="20" required>
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+          <div class="row row-form">
+            <div class="col-md-6">
+              <!--<label for="email">E-mail:</label>-->
+              <input type="email" class="form-control ggform" name="email" id="email" placeholder="E-mail" maxlength="40" required>
+            </div>
+            <!-- col -->
+            <div class="col-md-6">
+              <!--<label for="telefone">Telefone:</label>-->
+              <input type="telefone" class="form-control ggform" name="telefone" id="telefone" placeholder="Telefone" maxlength="20" required>
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+          <div class="row row-form">
+            <div class="col-md-6">
+              <!--<label for="empresa">Empresa:</label>-->
+              <input type="empresa" class="form-control ggform" name="empresa" id="empresa" placeholder="Empresa">
+            </div>
+            <!-- col -->
+            <div class="col-md-6">
+              <!--<label for="cargo">Cargo:</label>-->
+              <input type="cargo" class="form-control ggform" name="cargo" id="cargo" placeholder="Cargo">
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+          <div class="row row-form">
+            <div class="col-md-6">
+              <!--<label for="estadoSelect1">Estado</label>-->
+              <select class="form-control ggform form-select" name="estado" id="estado">
                       <option>Selecione um estado...</option>
                       <option>Acre</option>
                       <option>Alagoas</option>
@@ -226,40 +194,56 @@
                       <option>Sergipe</option>
                       <option>Tocantins</option>
                     </select>
-                </div><!-- col -->
-                <div class="col-md-6">
-                  <!--<label for="cidade">Cidade:</label>-->
-                <input type="cidade" class="form-control ggform" name="cidade" id="cidade" placeholder="Cidade">
-                </div><!-- col -->
-              </div><!-- row -->
-              <div class="row" style="margin-top:8px;">
-                <div class="col-md-12">
-                  <!--<label for="assunto">Assunto:</label>-->
-                <input type="assunto" class="form-control ggform" name="assunto" id="assunto" placeholder="Assunto">
-                </div><!-- col -->
-              </div><!-- row -->
-            <div class="row">
-              <div class="col-md-12">
-                  <br>
-                  <textarea class="form-control ggform" name="mensagem" id="mensagem" rows="6" maxlength="255" placeholder="Escreva sua mensagem..." required></textarea>
-                </div><!-- col -->
-            </div><!-- row -->
-            <div class="row" style="height:50px;">
-              <div class="col-md-4" style="height:50px;"></div><!-- col -->
-              <div class="col-md-4" style="height:50px;"></div><!-- col -->
-              <div class="col-md-4" style="height:50px;">
-                <br>
-                <div class="container" style="padding:0px 15px 15px 15px !important;">
-                  <div class="row">
-                    <button type="submit" id="btnEnvio" class="btn btn-outline-primary col-md-12">Enviar</button>
-                  </div><!-- row -->
-                </div><!-- container -->
-              </div><!-- col -->
-            </div><!-- row -->
-          </div><!--container -->
-          </div><!-- form group -->
-        </form>
-</div><!-- modalizi -->
+            </div>
+            <!-- col -->
+            <div class="col-md-6">
+              <!--<label for="cidade">Cidade:</label>-->
+              <input type="cidade" class="form-control ggform" name="cidade" id="cidade" placeholder="Cidade">
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+          <div class="row row-form">
+            <div class="col-md-12">
+              <!--<label for="assunto">Assunto:</label>-->
+              <input type="assunto" class="form-control ggform" name="assunto" id="assunto" placeholder="Assunto">
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+          <div class="row">
+            <div class="col-md-12">
+              <br>
+              <textarea class="form-control ggform" name="mensagem" id="mensagem" rows="6" maxlength="255" placeholder="Escreva sua mensagem..." required></textarea>
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+          <div class="row row-form" style="height:50px;">
+            <div class="col-md-4" style="height:50px;"></div>
+            <!-- col -->
+            <div class="col-md-4" style="height:50px;"></div>
+            <!-- col -->
+            <div class="col-md-4" style="height:50px;">
+              <br>
+              <div class="container" style="padding:0px 15px 15px 15px !important;">
+                <div class="row">
+                  <button type="submit" id="btnEnvio" class="btn btn-outline-primary col-md-12">Enviar</button>
+                </div>
+                <!-- row -->
+              </div>
+              <!-- container -->
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+        </div>
+        <!--container -->
+      </div>
+      <!-- form group -->
+    </form>
+  </div>
+  <!-- modalizi -->
 
 <!-- ========================TRABALHE CONOSCO======================== -->
     <div class="bg-topo-img">
