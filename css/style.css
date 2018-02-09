@@ -355,6 +355,7 @@ body {
   color: #fff;
   text-align: center;
   font-weight: 300;
+  font-size: 18px;
 }
 
 .sobre {
@@ -429,6 +430,7 @@ body {
 
 .desc-mdlb {
   padding-bottom: 30px;
+  font-size: 18px;
 }
 
 .trabalheconosco, .empresa {
